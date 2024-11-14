@@ -1,0 +1,162 @@
+/* ======= 헤더 ======= */
+header{
+    z-index:100;
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    box-sizing:border-box;
+    width:100%;
+    height:70px;
+    /* background-color:#ccc; */
+}
+/* 로고 */
+header h1, header img{
+    width:70px;
+    height:70px;
+}
+/* 메뉴 */
+header div, header ul{
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
+    align-items:center;
+}
+header ul{
+    margin-right:50px;
+    width:600px;
+}
+header li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 50%;
+    background-color: #a0d123;
+    z-index: -1;
+}
+header li:hover a:after {
+    transition:0.7s;
+    width: 100%;
+}
+header i{
+    font-size:40px;
+}
+
+/*  ======= 비주얼  ======= */
+#visual{
+    padding-top:70px;
+    box-sizing:border-box;
+    margin:0px auto;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+/* 제목 */
+#visual h2{
+    position:absolute;
+    left:5vw;
+    font-size:8vw;
+    color:#48443e;
+}
+#visual h2:before{
+    content:"";
+    position:absolute;
+    top:-100px;
+    left:-100px;
+    z-index:-1;
+    width:200px;
+    height:200px;
+    background:radial-gradient(#739223,transparent, transparent)
+}
+#visual span{
+    margin-left:50px;
+    font-family:'InkLipquid';
+    font-weight: normal;
+    color:#739223;
+}
+/* 사진과 도형 */
+.vis_profile{
+    z-index:0;
+    position:absolute;
+    left:20%;
+    bottom:0;
+    height:30vw;
+    transform:translateX(-40%)
+}
+.green:before{
+    content:"";
+    position:absolute;
+    right:20vw;
+    bottom:-10vw;
+    width:20vw;
+    height:30vw;
+    transform:rotate(-60deg);
+    background:no-repeat url(../img/vis_text.svg) center;
+
+}
+.green{
+    z-index:-1;
+    position:absolute;
+    display:inline;
+    bottom:0;
+    right:5vw;
+    width:30vw;
+    height:45vw;
+    background-color:#739223;
+    border-radius:25vw 10vw;
+    transform:rotate(30deg) translateX(-20%);
+}
+
+/* ======= (컨테이너1) 자기소개 ======= */
+/* ------- 가치관 ------- */
+.intro_beliefs{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+}
+.intro_beliefs div{
+    width:100%;
+    height:100vh;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.intro_beliefs h2{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:80%;
+    text-align:center;
+    font-size:4vw;
+}
+.intro_beliefs span{
+    font-family:'InkLipquid';
+    font-weight: normal;
+    color:#739223;
+}
+.intro_bg1{
+    background-image:url(../img/intro_bg1.jpg);
+}
+.intro_bg2{
+    background-image:url(../img/intro_bg2.jpg);
+}
+/* 색깔 바뀌는 거 미리 보기 */
+.intro_beliefs:hover .intro_bg1{
+    transition:3s;
+    margin-bottom:-100vh;
+}
+/* ------- 프로필 ------- */
+.intro_profile{
+    width:100%;
+    height:100vh;
+}
+.intro_profile img{
+    margin:5vw 5vw  0;
+    width:50vw;
+}

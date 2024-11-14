@@ -1,0 +1,44 @@
+
+/* reset */
+*{margin:0; padding:0;}
+ul{
+    list-style:none;
+    padding:0;
+}
+a{
+    display:block;
+    width:100%;
+    height:100;
+    text-decoration:none;
+    color:#48443e;
+}
+body{
+    background-color:#efe4d4;
+    font-family:'NanumSquare';
+    /* overflow:hidden; */
+}
+a, p, h2, h3, h4, h5, h6{
+    transform:skew(-0.5deg);
+    color:#48443e;
+}
+
+/* font */
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+폰트 이름 모음
+font-family: 'NanumSquareLight';
+font-family: 'NanumSquare';
+font-family: 'NanumSquareBold';
+font-family: 'NanumSquareExtraBold';
+font-family: 'NanumSquareAcb';
+font-family: 'NanumSquareAceb';
+font-family: 'NanumSquareAcl';
+font-family: 'NanumSquareAcr';
+
+*/
